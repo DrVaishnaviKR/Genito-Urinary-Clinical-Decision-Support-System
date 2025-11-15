@@ -1,38 +1,97 @@
 <div align="center">
-<img src="https://img.shields.io/badge/Clinical%20Decision%20Support-AI%20Powered-blueviolet?style=for-the-badge" /> <br><br> <h1>Genito-Urinary Clinical Decision Support System (GU-CDSS)</h1> <p>AI-assisted decision support for Genito-Urinary clinical conditions, built using Google AI Studio and Indian national STI/RTI guidelines.</p> </div>
-🌟 Project Highlights
+Genito-Urinary Clinical Decision Support System (GU-CDSS)
 
-AI-powered clinical reasoning
+AI-powered assistant for syndromic management of GU conditions
 
-Validated with national STI/RTI algorithms
+<br> <img src="https://img.shields.io/badge/AI%20Model-Google%20Gemini-blue?style=for-the-badge&logo=google" /> <img src="https://img.shields.io/badge/Platform-Google%20AI%20Studio-orange?style=for-the-badge&logo=google" /> <img src="https://img.shields.io/badge/Clinical%20Guidelines-NACO%20STI%2FRTI-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Developer-Dr.%20Vaishnavi%20K%20R-purple?style=for-the-badge" /> <img src="https://img.shields.io/badge/Knowledge%20Bank-PDF%20Integrated-red?style=for-the-badge&logo=adobeacrobatreader" />
 
-Structured and evidence-based
+<br><br>
 
-Generates probable diagnosis + referral criteria + management
+</div>
+🧠 Project Overview
 
-Built for primary care, AYUSH doctors & digital health researchers
+The Genito-Urinary Clinical Decision Support System (GU-CDSS) is an AI-assisted clinical reasoning tool designed to support healthcare providers in evaluating male and female genito-urinary symptoms.
 
-🖼 Application Screenshots
-1️⃣ Home / Front Page
-<img src="./screenshots/frontpage.png" width="750"/>
-2️⃣ Chat / Decision Support Page
-<img src="./screenshots/chatpage.png" width="750"/>
-🧠 Knowledge Bank (Structured Clinical Guidelines)
+The system uses:
 
-📁 Located in: /knowledge-bank
+📚 Validated Indian NACO STI/RTI guidelines
 
-<details> <summary>📌 <strong>Click to Expand List of Conditions</strong></summary>
+🔀 Rule-based clinical algorithms
+
+🤖 Google Gemini AI for natural-language reasoning
+
+🧾 A structured PDF knowledge bank
+
+It assists frontline clinicians by providing:
+
+✔ Symptom triage
+✔ Syndrome classification
+✔ Key differentiating signs
+✔ First-line management
+✔ Referral red-flags
+
+🖼️ Screenshots
+1️⃣ App Home / Landing Page
+<img src="./screenshots/frontpage.png" width="800" />
+2️⃣ Chat Interface / AI Clinical Decision Support
+<img src="./screenshots/chatpage.png" width="800" />
+🚀 How to Run the Demo
+
+Anyone can test the AI-powered CDSS using the steps below.
+
+1️⃣ Open the Application
+
+Go to the app hosted in Google AI Studio App Builder:
+
+👉 Replace this with your actual app link
+https://aistudio.google.com/app/your-app-id
+
+2️⃣ Start the Clinical Chat
+
+On the landing page, click Start or choose a clinical category.
+
+You will see the clinical chat interface where you can type symptoms.
+
+3️⃣ Try Example Inputs
+🔹 Female Vaginal Discharge
+25-year-old female with itching and white curdy discharge.
+
+🔹 Male Burning Micturition
+22-year-old male with burning urination and yellow discharge.
+
+🔹 Pelvic Pain & Fever
+28-year-old female with abdominal pain, fever, and foul-smelling discharge.
+
+
+The AI will give you:
+
+Probable syndrome
+
+Key questions
+
+Red-flag signs
+
+Recommended management
+
+📂 Repository Structure
+/
+├── algorithms/         → Clinical decision trees (PDF)
+├── knowledge-bank/     → NACO guideline PDFs (P-GU-001 to P-GU-009)
+├── screenshots/        → App images used in README
+└── README.md
+
+📚 Knowledge Bank Contents
 Female Conditions
 
-Cervical Discharge Syndrome (Cervicitis)
+Cervicitis
+
+Vaginitis
 
 Pelvic Inflammatory Disease (PID)
 
-Vaginitis / Vaginal Discharge Syndrome
-
 Dysmenorrhea
 
-Urinary Tract Infection (UTI)
+Urinary Tract Infection
 
 Male Conditions
 
@@ -40,60 +99,59 @@ Urethritis
 
 Epididymitis
 
-Painful Scrotal Swelling
+Scrotal Swelling Syndromes
 
-Genital Ulcer Disease
+Genital Ulcer Diseases
 
-Urinary Symptoms (Burning, Haematuria, Polyuria)
+Urinary Symptoms (burning, haematuria, polyuria)
 
-</details>
-🔀 Clinical Algorithms (Decision Trees)
+🔀 Algorithms Included
 
-📁 Stored under: /algorithms
+Found under /algorithms:
 
-<details> <summary>📌 <strong>Click to View Algorithm Categories</strong></summary>
+Redness / Burning of genital region
 
-Redness / Swelling of Genital Region
+Urinary symptom decision tree
 
-Burning Micturition (Male/Female)
+Scrotal swelling algorithm
 
-Scrotal Swelling Pathway
+Vaginal discharge decision flow
 
-Vaginal Discharge Decision Flow
+Vaginal bleeding pathways
 
-Vaginal Bleeding
+Genital ulcer classification
 
-Genital Ulcer Classification
+Inguinal lymphadenopathy (bubo)
 
-Inguinal Bubo
+Emergency referral indicators
 
-Referral Red-Flag Indicators
+🏗️ Tech Stack
+Component	Technology
+AI Model	Google Gemini
+Platform	Google AI Studio
+Knowledge Source	PDF Knowledge Bank
+Logic Layer	Rule-based Clinical Algorithms
+Version Control	GitHub
+🌱 Future Enhancements
 
-</details>
-🏗️ Tech Stack & Tools
-<p align="left"> <img src="https://img.shields.io/badge/Google%20AI%20Studio-Gemini-brightgreen?style=for-the-badge&logo=google" /> <img src="https://img.shields.io/badge/PDF%20Knowledge%20Bank-Embedded-orange?style=for-the-badge&logo=adobeacrobatreader" /> <img src="https://img.shields.io/badge/Clinical%20Algorithms-Rule%20Based-blue?style=for-the-badge" /> <img src="https://img.shields.io/badge/GitHub-Version%20Control-black?style=for-the-badge&logo=github" /> </p>
-🚀 Future Enhancements
+API integration with EMR/HIS
 
-API-based integration with EMR / HIS
+QR-code based patient entry
 
-Patient QR-code entry
+Auto-generated clinical notes
 
-Auto-generated clinical summaries
+Local language support
 
-Severity scoring system
+Voice-based symptom intake
 
-Voice-enabled symptom input
-
-Multi-language (EN + Regional) version
+Mobile-friendly UI
 
 👩‍⚕️ Developer
 Dr. Vaishnavi K R
 
-Clinical AI | Medical Informatics | Digital Health
 PGDM – Artificial Intelligence & Data Science (Healthcare)
+Clinical AI | Digital Health | Medical Informatics
 
-<p align="left"> <img src="https://img.shields.io/badge/Creator-Dr.%20Vaishnavi%20K%20R-purple?style=for-the-badge" /> </p>
-⭐ Support the Project
-
-If this project added value, please consider ⭐ starring the repository.
-It helps other clinicians, developers, and researchers discover this project.
+<div align="center">
+⭐ If you found this project useful, please consider starring the repository!
+</div>
