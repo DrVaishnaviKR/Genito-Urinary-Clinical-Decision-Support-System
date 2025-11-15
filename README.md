@@ -128,6 +128,7 @@ Genito-Urinary-CDSS/
 ## 🧪 Demo Preview Screenshots
 ✨ Home / Landing Page
 <img src="./screenshots/frontpage.png" width="850" />
+<br/>
 ✨ Chat Interface / Clinical Reasoning Flow
 <img src="./screenshots/chatpage.png" width="850" />
 
