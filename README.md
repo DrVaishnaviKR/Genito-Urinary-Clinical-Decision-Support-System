@@ -1,110 +1,164 @@
-<div align="center"> <img src="https://img.shields.io/badge/AI%20Model-Google%20Gemini-blue?style=for-the-badge&logo=google" /> <img src="https://img.shields.io/badge/Platform-Google%20AI%20Studio-orange?style=for-the-badge&logo=google" /> <img src="https://img.shields.io/badge/Guidelines-NACO%20STI%2FRTI-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Developer-Dr.%20Vaishnavi%20K%20R-purple?style=for-the-badge" /> </div>
-📌 1. Overview
+<div align="center"> <img src="https://img.shields.io/badge/AI%20Model-Google%20Gemini-blue?style=for-the-badge&logo=google" /> <img src="https://img.shields.io/badge/Built%20Using-Google%20AI%20Studio-orange?style=for-the-badge&logo=google" /> <img src="https://img.shields.io/badge/Clinical%20Guidelines-NACO%20STI%2FRTI-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Developer-Dr.%20Vaishnavi%20K%20R-purple?style=for-the-badge" /> </div>
+📘 1. What This App Does
 
-The Genito-Urinary Clinical Decision Support System (GU-CDSS) is an AI-powered diagnostic assistant designed for frontline healthcare providers.
-It uses:
+The GU-CDSS is a clinical AI system that assists healthcare providers in evaluating male and female genito-urinary symptoms using:
 
-🔹 Google Gemini AI
+📚 Standardized Syndromic Algorithms
 
-🔹 PDF-based Knowledge Bank extracted from NACO STI/RTI guidelines
+📄 PDF-Extracted Knowledge Bank (NACO Guidelines)
 
-🔹 Syndromic clinical algorithms
+🤖 Google Gemini AI Reasoning
 
-🔹 Rule-based logic + AI reasoning
+🧠 Rule-Based Clinical Flowcharts
 
-This improves accuracy, triage speed, and standardization in assessing GU symptoms.
+It helps clinicians quickly determine:
 
-🖼️ 2. Application Screenshots
+✔ Likely syndrome
+✔ Required history questions
+✔ Identifying danger signs
+✔ Recommended first-line management
+✔ Referral criteria
+
+🖥️ 2. App Screenshots
 ✨ Home / Landing Page
-<img src="./screenshots/frontpage.png" width="800"/>
+<img src="./screenshots/frontpage.png" width="850" />
 ✨ Chat Interface / Clinical Reasoning Flow
-<img src="./screenshots/chatpage.png" width="800"/>
-🚀 3. How to Run the Demo
+<img src="./screenshots/chatpage.png" width="850" />
+🚀 3. How to Use the Application (Step-by-Step)
 
-The application runs through Google AI Studio App Builder.
+This section explains EXACTLY how a user can interact with the GU-CDSS app.
 
-Step-by-Step:
-Step	Action
-1	Open the live app (replace your actual URL below).
-2	Select the symptom category.
-3	Start the clinical chat.
-4	Enter symptoms (examples below).
-5	Review the AI-generated diagnosis, red-flags, and management steps.
-🌐 Demo URL:
+Step 1 — Open the App
 
-👉 Replace this placeholder with your actual app link
-https://aistudio.google.com/app/YOUR_APP_ID
+Click the application link hosted on Google AI Studio App Builder:
 
-Try These Example Inputs
-Case	Input Sample
-Female Discharge	“25-year-old female with itching and curdy white discharge.”
-Male Burning Urination	“22-year-old male with burning urination and yellow discharge.”
-PID Symptoms	“28-year-old female with fever, pelvic pain, and foul-smelling discharge.”
-Scrotal Swelling	“30-year-old male with unilateral painful scrotal swelling.”
+👉 https://aistudio.google.com/app/YOUR-APP-ID
+
+You will reach the Home / Landing Page.
+
+Step 2 — Select Symptom Category
+
+Choose from the available options:
+
+Female genito-urinary complaints
+
+Male genito-urinary complaints
+
+Urethral discharge
+
+Vaginal discharge
+
+Burning micturition
+
+Scrotal swelling
+
+Genital ulcers
+
+Urine changes (polyuria, haematuria, oliguria)
+
+Step 3 — Start the AI Chat
+
+Once inside the chatbot interface:
+
+The AI asks standard clinical questions
+
+You respond with patient symptoms
+
+The app applies decision trees + guideline logic
+
+It identifies the most probable syndrome
+
+Step 4 — Review the Recommendations
+
+The system will show:
+
+🎯 Syndrome classification
+
+🚨 Red-flag signs
+
+💊 First-line recommended treatment
+
+👩‍⚕️ When to refer immediately
+
+🔍 Clinical reasoning behind decisions
+
+Step 5 — Try Example Inputs
+Female Case Example
+25-year-old woman with itching and curdy white discharge.
+
+Male Case Example
+22-year-old male with burning urination and yellow discharge.
+
+PID Case Example
+28-year-old female with fever, pelvic pain, and foul-smelling discharge.
+
 📂 4. Repository Structure
 /
-├── algorithms/         → Clinical decision trees (PDFs)
-├── knowledge-bank/     → NACO guideline PDFs (P-GU-001 to P-GU-009)
-├── screenshots/        → Images displayed in README
+├── algorithms/         ← Clinical decision flowcharts (PDFs)
+├── knowledge-bank/     ← NACO guideline PDFs (P-GU-001 to P-GU-009)
+├── screenshots/        ← Images shown in README
 └── README.md
 
-📘 5. Knowledge Bank Summary
+📚 5. Knowledge Bank Summary (Visually Explained)
 
-A structured evidence-based knowledge set derived from Indian National STI/RTI guidelines.
+The Knowledge Bank consolidates ALL GU-related syndromes into a structured reference set used by the AI.
 
-Female Syndromes
-Condition	PDF File
-Cervicitis	P-GU-001
-Dysmenorrhea	P-GU-002
-Genital Ulcer Disease	P-GU-003
-PID	P-GU-005
-Vaginitis	P-GU-009
-UTI	P-GU-008
-Male Syndromes
-Condition	PDF File
-Urethritis	P-GU-007
-Epididymitis	P-GU-006
-Scrotal Swelling	Algorithm Set
-Genital Ulcers	P-GU-003
-Urinary Symptoms	Algorithm Set
-🔀 6. Algorithms Integrated
+🩺 Female Syndromes
+Syndrome	Short Description	File
+Cervicitis	Mucopurulent discharge, cervical inflammation	P-GU-001
+Dysmenorrhea	Cramping pelvic pain during menstruation	P-GU-002
+Genital Ulcer Disease	Painful/painless ulcers with/without lymph nodes	P-GU-003
+PID	Pelvic pain, fever, cervical motion tenderness	P-GU-005
+Vaginitis	Curdy, frothy, or foul-smelling discharge	P-GU-009
+UTI	Dysuria, frequency, urgency	P-GU-008
+🧔 Male Syndromes
+Syndrome	Short Description	File
+Urethritis	Burning urination + urethral discharge	P-GU-007
+Epididymitis	Painful scrotal swelling	P-GU-006
+Genital Ulcers	HSV, syphilis, chancroid, LGV	P-GU-003
+Urinary Symptoms	Burning, retention, haematuria	Algorithms
+Scrotal Swelling	Hernia vs torsion vs infection	Algorithms
+🔀 6. Algorithms Overview (Visually Structured)
 
-All clinical pathways are stored under /algorithms.
+The CDSS uses syndromic decision trees based on national guidelines.
 
-Included Algorithm Categories
-Algorithm	Purpose
-Genital Redness / Swelling (M/F)	Differentiation of infection vs trauma vs ulcer
-Urinary Symptoms	Polyuria, oliguria, haematuria, dysuria
-Scrotal Swelling	Hernia, torsion, epididymitis, hydrocele
-Vaginal Bleeding	PMS, DUB, cervical causes
-Vaginal Discharge	BV, candidiasis, trichomoniasis
-Genital Ulcer Classification	Syphilis, HSV, chancroid, LGV
+📊 Algorithm Categories
+Algorithm Category	What It Helps Identify
+Genital Redness/Swelling	Infection vs fungal vs trauma
+Urinary Complaints (M/F)	UTI, stones, diabetes, carcinoma
+Genital Ulcer Flowchart	HSV, syphilis, chancroid, LGV
+Vaginal Discharge Flow	Candida, BV, Trichomonas
+Scrotal Swelling	Torsion, hernia, epididymitis
+Vaginal Bleeding	DUB, pregnancy issues, cervical changes
 Inguinal Bubo	LGV vs TB lymphadenitis
-Referral Red Flags	Shock, fever, severe pain, pregnancy flags
-🏗️ 7. Tech Stack
-Component	Details
-AI Engine	Google Gemini (Google AI Studio)
-UI	Google AI Studio App Builder
-Knowledge Base	PDF extraction + structured rule mapping
-Language	Natural language for clinical reasoning
-Version Control	GitHub
-🌱 8. Future Enhancements
-Feature	Status
-EMR API integration	Planned
-QR-code patient entry	Planned
-Auto clinical summary generation	Planned
-Severity scores	Planned
-Voice-enabled input	Planned
-Regional language support	Planned
+Referral Algorithm	Danger signs requiring urgent care
+🧩 Visual Logic (Simplified)
+Symptom → Key Questions → Physical Findings → Algorithm Decision Node
+       → Syndrome Output → Treatment Guidance → Referral Criteria
+
+🏗️ 7. Technology Stack
+Component	Technology
+AI Engine	Google Gemini
+Interface	Google AI Studio App Builder
+Knowledge Base	Structured PDF extraction
+Clinical Logic	Rule-based decision trees
+Repository	GitHub
+🎯 8. Future Enhancements
+Planned Feature	Benefit
+EMR Integration	Auto-saving clinical notes
+QR-Code Patient Entry	Faster OPD workflow
+Auto Summary Generation	Case documentation
+Regional Languages	Broader accessibility
+Voice Input	Hands-free clinical use
 👩‍⚕️ 9. Developer
 👤 Dr. Vaishnavi K R
 
 PGDM – Artificial Intelligence & Data Science (Healthcare)
-Clinical AI • Digital Health • Medical Informatics
+Specialization in: Clinical AI • Digital Health • Medical Informatics
 
 <div align="center">
-⭐ If you found this project helpful, please give it a star!
+⭐ If this project helped you, please give it a star!
 
-It helps reach more clinicians & developers.
+It supports healthcare-focused AI development.
 
 </div>
