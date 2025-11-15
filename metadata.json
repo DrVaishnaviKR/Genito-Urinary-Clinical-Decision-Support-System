@@ -1,0 +1,5 @@
+{
+  "name": "Genito-Urinary Clinical Decision Support System",
+  "description": "An AI-powered expert system to assist in the diagnosis of Genito-Urinary (GU) disorders based on the IKP-BTP algorithm. The system guides users through a diagnostic flowchart and provides AI-generated summaries for potential conditions.",
+  "requestFramePermissions": []
+}
